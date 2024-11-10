@@ -1,0 +1,127 @@
+/* 基本的なスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px; /* 最大幅を少し小さめに設定 */
+    margin: 40px auto; /* 上下の余白を確保 */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px; /* タイトルの下に余白 */
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 入力フィールド間の隙間を調整 */
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  input, select {
+    width: 100%; /* 画面幅いっぱいに広げる */
+    max-width: 350px; /* 最大幅を設定 */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 350px; /* 入力欄と同じ最大幅に */
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+  }
+  
+  footer h2 {
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 5px 0;
+  }
+  
+  /* Twitterアイコンのスタイル */
+  .twitter-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #1DA1F2; /* Twitterの青色 */
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .twitter-icon {
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* 結果の色分け */
+  .low-weight {
+    color: #FF6347; /* トマト色（低体重） */
+  }
+  
+  .normal-weight {
+    color: #4CAF50; /* 緑色（普通体重） */
+  }
+  
+  .overweight {
+    color: #FF9800; /* オレンジ色（肥満1度） */
+  }
+  
+  .obese-2 {
+    color: #FF5722; /* 赤色（肥満2度） */
+  }
+  
+  .obese-3 {
+    color: #F44336; /* 深赤色（肥満3度） */
+  }

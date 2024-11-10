@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI計算機</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI計算機</h1>
+    <div class="form-container">
+      <label for="height">身長 (cm):</label>
+      <input type="number" id="height" placeholder="身長を入力">
+      
+      <label for="weight">体重 (kg):</label>
+      <input type="number" id="weight" placeholder="体重を入力">
+      
+      <label for="age">年齢:</label>
+      <input type="number" id="age" placeholder="年齢を入力">
+      
+      <label for="gender">性別:</label>
+      <select id="gender">
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+      </select>
+      
+      <button onclick="calculateBMI()">BMIを計算</button>
+    </div>
+    
+    <div class="result">
+      <h2>結果</h2>
+      <p id="bmi-result"></p>
+      <p id="bmi-comment"></p>
+      <p id="standard-weight"></p>
+      <p id="weight-difference"></p>
+      <p id="obesity-degree"></p> <!-- 肥満度 -->
+      <p id="body-fat-result"></p> <!-- 体脂肪率 -->
+    </div>
+    
+    <footer>
+      <h2>BMIとは？</h2>
+      <p>BMI（Body Mass Index）は、体重（kg）を身長（m）の2乗で割った値で、肥満度を示す指標です。</p>
+      <p>BMIは体重と身長から計算され、体重が適正かどうかを評価するために使われます。BMIの値は、以下の基準で分類されます：</p>
+      <ul>
+        <li>18.5未満: 低体重</li>
+        <li>18.5～24.9: 普通体重</li>
+        <li>25～29.9: 肥満（1度）</li>
+        <li>30～34.9: 肥満（2度）</li>
+        <li>35以上: 肥満（3度）</li>
+      </ul>
+      <p>健康を維持するためには、適正なBMIを目指すことが大切です。</p>
+    </footer>
+  </div>
+
+  <!-- Twitterリンク -->
+  <a href="https://twitter.com/nona9Q" target="_blank" class="twitter-link">
+    <i class="fab fa-twitter twitter-icon"></i> <!-- Font AwesomeのTwitterアイコン -->
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
